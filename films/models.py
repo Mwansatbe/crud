@@ -4,14 +4,14 @@ from django.core.validators import MinValueValidator, MaxLengthValidator
 
 
 # Create your models here.
-class Genre(models.model):
+class Genre(models.Model):
     name = models.CharField(_MAX_LENGTH == 100)
 
     def __str__(self):
         return self.name
 
 
-class film(models.model):
+class film(models.Model):
     title = models.CharField(max_length=200)
     length = models.PositiveIntegerField(blank=True, null=True)
     year = models.PositiveIntegerField(blank=True, null=True)
