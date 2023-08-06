@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'django_extensions',
+    'films.apps.FilmsConfig',
 ]
 
 MIDDLEWARE = [
@@ -87,7 +90,6 @@ DATABASES = {
         'PORT': os.getenv('DEV_DB_PORT'),
     }
 }
-
 
 
 # Password validation
